@@ -1,0 +1,59 @@
+/* Add a Valorant-inspired background */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #eaeaea;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 550px;
+}
+
+/* Style the header with Valorant colors */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff4655;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Style the button with sharp edges */
+button {
+    background-color: #ff4655;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the status paragraph */
+#status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #eaeaea;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
