@@ -2,6 +2,10 @@ let private = "idk";
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === 'fetchValorantInfo') {
+        if (!message.url || !message.url.includes('tracker.gg/valorant')) {
+            sendResponse({ data: 'This is not a Valorant profile page' });
+            return;
+        }
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
             if (tabs[0]?.id) {
                 chrome.scripting.executeScript(
