@@ -57,3 +57,21 @@ button:active {
     color: #eaeaea;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
+/* Style the anchor tag to match the theme */
+a {
+    color: #ff4655;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+a:hover {
+    color: #ff6b6b;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+a:active {
+    color: #d43a3a;
+    text-shadow: none;
+}
